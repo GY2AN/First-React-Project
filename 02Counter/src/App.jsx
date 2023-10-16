@@ -9,17 +9,21 @@ function App() {
   let[counter, setValue] = useState(5);
 
    let addValue = () =>{
-   setValue(counter + 1)
-   setValue(counter<=20)
+   
+   if(counter<=19){
+    setValue(counter + 1);
+   }
    }
 
    let resetValue = () =>{
-    setValue(counter = 0)
+    setValue(counter = 5)
    }
 
    let decreaseValue = () =>{
-    setValue(counter-1)
-    setValue(counter<=-20)
+    if(counter>=-19){
+      setValue(counter-1)
+    }
+    //setValue(counter<=-20)
    }
 
    
