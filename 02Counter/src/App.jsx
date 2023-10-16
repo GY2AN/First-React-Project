@@ -6,7 +6,7 @@ import './App.css'
 function App() {
    //let counter = 5;
 
-  let[counter, setValue] = useState(5);
+  let[counter, setValue] = useState(0);
 
    let addValue = () =>{
    
@@ -16,7 +16,7 @@ function App() {
    }
 
    let resetValue = () =>{
-    setValue(counter = 5)
+    setValue(counter = 0)
    }
 
    let decreaseValue = () =>{
@@ -29,13 +29,11 @@ function App() {
    
   return (
     <>
-     <h1>Chai or rect</h1>
+     <h1>Counter app with react</h1>
      <h2>Counter value : {counter}</h2>
-     <button onClick={decreaseValue}>Decrease</button>
-     <br />
+     <button onClick={decreaseValue} >Decrease</button>
      <button onClick={resetValue}>Reset</button>
-     <br />
-     <button onClick={addValue} >Increase</button>
+     <button onClick={addValue}>Increase</button>
     </>
   )
 }
