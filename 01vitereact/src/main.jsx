@@ -19,7 +19,7 @@ function MyApp(){
     children: 'Click me to visit google.com'
   } 
 
-const ReactElement = React.createElement( 
+const ReactElement = React.createElement(  
   'a', {href:"https://google.com", target:'_blank'}, 'click me to visit google'
 )
 
@@ -29,5 +29,6 @@ const anotherElement = (<a href="https://google.com" target='_blank'>Visit googl
 ReactDOM.createRoot(document.getElementById('root')).
 render(
   <App/>
+  anotherElement
 )
  
