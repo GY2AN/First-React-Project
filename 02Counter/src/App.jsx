@@ -10,6 +10,7 @@ function App() {
 
    let addValue = () =>{
    setValue(counter + 1)
+   setValue(counter<=20)
    }
 
    let resetValue = () =>{
@@ -18,6 +19,7 @@ function App() {
 
    let decreaseValue = () =>{
     setValue(counter-1)
+    setValue(counter<=-20)
    }
 
    
